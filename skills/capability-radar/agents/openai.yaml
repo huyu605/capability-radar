@@ -1,0 +1,7 @@
+interface:
+  display_name: "Capability Radar"
+  short_description: "Discover and evaluate open-source capabilities"
+  default_prompt: "Use $capability-radar to clarify my goal, search current open-source options, and recommend the best evidence-backed candidates."
+
+policy:
+  allow_implicit_invocation: true
