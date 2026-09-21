@@ -33,13 +33,13 @@ Consider all six layers, but search only relevant ones:
 5. software libraries;
 6. deployable products.
 
-Explain skipped layers. Read [references/sources.md](references/sources.md) before building the query matrix. Search in English and the user's language when useful.
+Explain skipped layers. Read [references/sources.md](references/sources.md) before building the query matrix and follow its source tiers, agent-skill adapters, and deduplication rules. Search in English and the user's language when useful. Record which relevant adapters were searched, unavailable, or skipped and why.
 
 ### 3. Discover broadly
 
-Use current web, registry, repository, and package-index results. Aim for 12–30 plausible candidates when the market supports it. Record the query date and direct URLs.
+Use current web, registry, repository, and package-index results. Prefer machine-readable indexes and read-only search interfaces when available. Do not install a CLI, authenticate to a catalog, or execute a candidate merely to improve discovery. Aim for 12–30 plausible candidates when the market supports it. Record the query date, direct URLs, and discovery source aliases.
 
-Deduplicate forks, mirrors, renamed projects, marketplace wrappers, and the same capability exposed through multiple catalogs. Distinguish prompt-only agents or skills from candidates that provide executable tools or integrations.
+Deduplicate forks, mirrors, renamed projects, marketplace wrappers, and the same skill exposed through multiple catalogs. Canonicalize agent skills by their upstream origin plus skill path and version or commit when available; keep catalog listings as aliases rather than separate candidates. Distinguish prompt-only agents or skills from candidates that provide executable tools or integrations.
 
 If live access is unavailable, do not claim the result is current. Stop the latest-market recommendation or clearly offer a lower-confidence, non-current research outline.
 

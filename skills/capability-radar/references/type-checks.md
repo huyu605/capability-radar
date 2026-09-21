@@ -9,8 +9,11 @@
 ## Agent skills
 
 - Read the full `SKILL.md` and any scripts it can invoke.
-- Inspect provenance, update mechanism, tool dependencies, permissions, and prompt-injection risk.
-- Confirm compatibility with the target agent and distinguish instructions from executable capability.
+- Trace every registry or marketplace listing to the upstream origin, skill path, and immutable revision or digest when available.
+- Compare mirrored copies and aliases across catalogs; do not count the same upstream skill more than once.
+- Inspect provenance, update mechanism, tool dependencies, commands, network access, secret requirements, permissions, and prompt-injection risk.
+- Confirm compatibility with the target agent and distinguish portable instructions from executable plugins, MCP servers, hooks, hosted services, or agent-specific packaging.
+- Treat marketplace verification, popularity, badges, and automated scans as supporting signals rather than proof of safety.
 
 ## MCP servers
 

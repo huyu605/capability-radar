@@ -30,6 +30,8 @@ The skill will:
 5. score fit, integration, maturity, security, maintenance, license, and operations;
 6. recommend up to three options and a bounded proof of concept.
 
+For Agent Skills, discovery is source-aware: it searches first-party collections, skills.sh, ClawHub, LobeHub Skills, browse.sh for browser workflows, GitHub/direct URLs, published well-known indexes, Claude marketplaces, and available Codex plugin catalogs when relevant. Results are normalized back to their upstream source so the same skill is not counted multiple times.
+
 It does not run scheduled monitoring or maintain a market database. Each research request obtains current evidence at query time.
 
 ## Scoring CLI
@@ -83,5 +85,7 @@ npx skills add https://github.com/huyu605/capability-radar \
 ```
 
 Skill 会按需澄清需求，分层搜索实时来源，回到项目官网、原始仓库和许可证核验重要事实，然后按照需求匹配、集成、成熟度、安全、维护、许可证和运维成本进行评分。
+
+针对 Agent Skill，雷达会按需覆盖官方合集、skills.sh、ClawHub、LobeHub Skills、面向浏览器工作流的 browse.sh、GitHub/直接 URL、网站发布的 well-known 索引、Claude Marketplace 和可用的 Codex 插件目录，并按上游来源去重，避免把同一个 Skill 在多个市场中的镜像重复计数。
 
 本项目不创建定时任务，也不维护全市场数据库；每次调研都在执行时获取最新证据。

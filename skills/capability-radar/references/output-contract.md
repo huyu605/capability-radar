@@ -8,7 +8,7 @@ State the outcome, audience, inputs/outputs, environment, deployment, budget, pr
 
 ## 2. Search coverage
 
-Give the as-of date, languages, searched layers, skipped layers with reasons, and important source limitations.
+Give the as-of date, languages, searched layers, skipped layers with reasons, and important source limitations. For Agent Skill research, list each relevant source adapter as searched, unavailable, or skipped with reason; do not collapse all catalogs into “web search.”
 
 ## 3. Market map
 
